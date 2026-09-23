@@ -18,6 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="seabattle_lib\game.cpp" />
+    <ClCompile Include="seabattle_lib\game_field.cpp" />
+    <ClCompile Include="seabattle_lib\player.cpp" />
+    <ClCompile Include="seabattle_lib\position.cpp" />
+    <ClCompile Include="seabattle_lib\ship.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="seabattle_lib\game.h" />
+    <ClInclude Include="seabattle_lib\game_field.h" />
+    <ClInclude Include="seabattle_lib\player.h" />
+    <ClInclude Include="seabattle_lib\position.h" />
+    <ClInclude Include="seabattle_lib\ship.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -123,20 +137,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="game.h" />
-    <ClInclude Include="game_field.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="position.h" />
-    <ClInclude Include="ship.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="game_field.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="position.cpp" />
-    <ClCompile Include="ship.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
