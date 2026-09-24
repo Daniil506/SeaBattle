@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SeaBattle\SeaBattle.vcxproj">
+    <ProjectReference Include="..\SeaBattle.vcxproj">
       <Project>{45b06535-da89-4265-884f-8e0a9edaf8fc}</Project>
     </ProjectReference>
   </ItemGroup>

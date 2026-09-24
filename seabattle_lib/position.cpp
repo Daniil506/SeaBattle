@@ -21,4 +21,4 @@ namespace seabattle {
         return "(" + std::to_string(x_) + ", " + std::to_string(y_) + ")";
     }
 
-} // namespace seabattle
+} 
