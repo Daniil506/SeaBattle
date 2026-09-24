@@ -18,27 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="seabattle_lib\game.cpp" />
-    <ClCompile Include="seabattle_lib\game_field.cpp" />
-    <ClCompile Include="seabattle_lib\player.cpp" />
-    <ClCompile Include="seabattle_lib\position.cpp" />
-    <ClCompile Include="seabattle_lib\ship.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="seabattle_lib\game.h" />
-    <ClInclude Include="seabattle_lib\game_field.h" />
-    <ClInclude Include="seabattle_lib\player.h" />
-    <ClInclude Include="seabattle_lib\position.h" />
-    <ClInclude Include="seabattle_lib\ship.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{45b06535-da89-4265-884f-8e0a9edaf8fc}</ProjectGuid>
-    <RootNamespace>SeaBattle</RootNamespace>
+    <ProjectGuid>{219c655b-0a58-4675-a066-e0f8ebe97518}</ProjectGuid>
+    <RootNamespace>seabattleapp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>seabattle_lib</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -55,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -117,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Даниил\source\repos\SeaBattle\seabattle_lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +123,14 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeaBattle.vcxproj">
+      <Project>{45b06535-da89-4265-884f-8e0a9edaf8fc}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
